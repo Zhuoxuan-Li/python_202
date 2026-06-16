@@ -38,7 +38,7 @@ for day in days:
         weekly_plan.append((day, chosen_task_clean))
     else:
         print(
-            f"\"{chosen_task}\" is not a valid task. "
+            f"\"{chosen_task_clean}\" is not a valid task. "
             "Assigned \"Free Day\" instead."
         )
         weekly_plan.append((day, "Free Day"))
