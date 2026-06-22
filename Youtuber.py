@@ -5,7 +5,13 @@ review = TextBlob("Python is useful and fun. I love to learn it.")
 
 print(review.sentiment)
 
-
+if review.sentiment.polarity > 0:
+    print("This review sounds positive.")
+elif review.sentiment.polarity < 0:
+    print("This review sounds negative.")
+else:
+    print("This review sounds neutral.")
+    
 # Example 2
 wrong_text = TextBlob("I lov Python. I want to lern more aboot it.")
 
